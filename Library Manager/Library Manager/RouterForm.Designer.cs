@@ -71,7 +71,7 @@
             this.imgBook.Location = new System.Drawing.Point(27, 58);
             this.imgBook.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.imgBook.Name = "imgBook";
-            this.imgBook.Size = new System.Drawing.Size(92, 91);
+            this.imgBook.Size = new System.Drawing.Size(108, 102);
             this.imgBook.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.imgBook.TabIndex = 0;
             this.imgBook.TabStop = false;
@@ -86,7 +86,7 @@
             this.imgUser.Location = new System.Drawing.Point(150, 58);
             this.imgUser.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.imgUser.Name = "imgUser";
-            this.imgUser.Size = new System.Drawing.Size(99, 91);
+            this.imgUser.Size = new System.Drawing.Size(115, 102);
             this.imgUser.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.imgUser.TabIndex = 1;
             this.imgUser.TabStop = false;
@@ -101,7 +101,7 @@
             this.imgBorrow.Location = new System.Drawing.Point(276, 58);
             this.imgBorrow.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.imgBorrow.Name = "imgBorrow";
-            this.imgBorrow.Size = new System.Drawing.Size(102, 91);
+            this.imgBorrow.Size = new System.Drawing.Size(118, 102);
             this.imgBorrow.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.imgBorrow.TabIndex = 2;
             this.imgBorrow.TabStop = false;
@@ -116,7 +116,7 @@
             this.imgData.Location = new System.Drawing.Point(409, 58);
             this.imgData.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.imgData.Name = "imgData";
-            this.imgData.Size = new System.Drawing.Size(106, 93);
+            this.imgData.Size = new System.Drawing.Size(122, 104);
             this.imgData.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.imgData.TabIndex = 3;
             this.imgData.TabStop = false;
@@ -162,7 +162,7 @@
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Padding = new System.Windows.Forms.Padding(5, 1, 0, 1);
-            this.menuStrip1.Size = new System.Drawing.Size(540, 29);
+            this.menuStrip1.Size = new System.Drawing.Size(575, 29);
             this.menuStrip1.TabIndex = 10;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -178,14 +178,14 @@
             // dangXuatToolStripMenuItem
             // 
             this.dangXuatToolStripMenuItem.Name = "dangXuatToolStripMenuItem";
-            this.dangXuatToolStripMenuItem.Size = new System.Drawing.Size(224, 28);
+            this.dangXuatToolStripMenuItem.Size = new System.Drawing.Size(173, 28);
             this.dangXuatToolStripMenuItem.Text = "Đăng xuất";
             this.dangXuatToolStripMenuItem.Click += new System.EventHandler(this.dangXuatToolStripMenuItem_Click);
             // 
             // thoatToolStripMenuItem
             // 
             this.thoatToolStripMenuItem.Name = "thoatToolStripMenuItem";
-            this.thoatToolStripMenuItem.Size = new System.Drawing.Size(224, 28);
+            this.thoatToolStripMenuItem.Size = new System.Drawing.Size(173, 28);
             this.thoatToolStripMenuItem.Text = "Thoát";
             this.thoatToolStripMenuItem.Click += new System.EventHandler(this.thoatToolStripMenuItem_Click);
             // 
@@ -240,7 +240,7 @@
             // thongTinToolStripMenuItem
             // 
             this.thongTinToolStripMenuItem.Name = "thongTinToolStripMenuItem";
-            this.thongTinToolStripMenuItem.Size = new System.Drawing.Size(224, 28);
+            this.thongTinToolStripMenuItem.Size = new System.Drawing.Size(168, 28);
             this.thongTinToolStripMenuItem.Text = "Thông tin";
             this.thongTinToolStripMenuItem.Click += new System.EventHandler(this.thongTinToolStripMenuItem_Click);
             // 
@@ -253,9 +253,9 @@
             this.toolStrip2.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.lblAccount,
             this.lblTimeSys});
-            this.toolStrip2.Location = new System.Drawing.Point(0, 189);
+            this.toolStrip2.Location = new System.Drawing.Point(0, 197);
             this.toolStrip2.Name = "toolStrip2";
-            this.toolStrip2.Size = new System.Drawing.Size(540, 32);
+            this.toolStrip2.Size = new System.Drawing.Size(575, 32);
             this.toolStrip2.TabIndex = 37;
             this.toolStrip2.Text = "toolStrip2";
             // 
@@ -280,9 +280,11 @@
             // 
             // RouterForm
             // 
+            this.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.Appearance.Options.UseBackColor = true;
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(540, 221);
+            this.ClientSize = new System.Drawing.Size(575, 229);
             this.Controls.Add(this.toolStrip2);
             this.Controls.Add(this.menuStrip1);
             this.Controls.Add(this.imgData);

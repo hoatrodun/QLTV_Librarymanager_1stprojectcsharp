@@ -125,16 +125,16 @@
             this.barDockControlTop.Location = new System.Drawing.Point(0, 0);
             this.barDockControlTop.Manager = this.barManager1;
             this.barDockControlTop.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.barDockControlTop.Size = new System.Drawing.Size(935, 0);
+            this.barDockControlTop.Size = new System.Drawing.Size(1000, 0);
             // 
             // barDockControlBottom
             // 
             this.barDockControlBottom.CausesValidation = false;
             this.barDockControlBottom.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.barDockControlBottom.Location = new System.Drawing.Point(0, 557);
+            this.barDockControlBottom.Location = new System.Drawing.Point(0, 581);
             this.barDockControlBottom.Manager = this.barManager1;
             this.barDockControlBottom.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.barDockControlBottom.Size = new System.Drawing.Size(935, 0);
+            this.barDockControlBottom.Size = new System.Drawing.Size(1000, 0);
             // 
             // barDockControlLeft
             // 
@@ -143,16 +143,16 @@
             this.barDockControlLeft.Location = new System.Drawing.Point(0, 0);
             this.barDockControlLeft.Manager = this.barManager1;
             this.barDockControlLeft.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.barDockControlLeft.Size = new System.Drawing.Size(0, 557);
+            this.barDockControlLeft.Size = new System.Drawing.Size(0, 581);
             // 
             // barDockControlRight
             // 
             this.barDockControlRight.CausesValidation = false;
             this.barDockControlRight.Dock = System.Windows.Forms.DockStyle.Right;
-            this.barDockControlRight.Location = new System.Drawing.Point(935, 0);
+            this.barDockControlRight.Location = new System.Drawing.Point(1000, 0);
             this.barDockControlRight.Manager = this.barManager1;
             this.barDockControlRight.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.barDockControlRight.Size = new System.Drawing.Size(0, 557);
+            this.barDockControlRight.Size = new System.Drawing.Size(0, 581);
             // 
             // barLargeButtonItem1
             // 
@@ -206,7 +206,7 @@
             // 
             // menuStrip1
             // 
-            this.menuStrip1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.menuStrip1.BackColor = System.Drawing.Color.Silver;
             this.menuStrip1.GripStyle = System.Windows.Forms.ToolStripGripStyle.Visible;
             this.menuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -215,7 +215,7 @@
             this.tienIchToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(935, 31);
+            this.menuStrip1.Size = new System.Drawing.Size(1000, 31);
             this.menuStrip1.TabIndex = 9;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -295,7 +295,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(18, 217);
+            this.label1.Location = new System.Drawing.Point(22, 223);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(87, 17);
             this.label1.TabIndex = 16;
@@ -311,7 +311,7 @@
             // 
             this.txtIdStudent.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
             this.txtIdStudent.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.CustomSource;
-            this.txtIdStudent.Location = new System.Drawing.Point(125, 217);
+            this.txtIdStudent.Location = new System.Drawing.Point(129, 223);
             this.txtIdStudent.MaxLength = 15;
             this.txtIdStudent.Name = "txtIdStudent";
             this.txtIdStudent.Size = new System.Drawing.Size(267, 22);
@@ -329,10 +329,10 @@
             this.lblMode,
             this.lblAccount,
             this.lblTimeSys});
-            this.toolStrip2.Location = new System.Drawing.Point(0, 524);
+            this.toolStrip2.Location = new System.Drawing.Point(0, 548);
             this.toolStrip2.Name = "toolStrip2";
             this.toolStrip2.RenderMode = System.Windows.Forms.ToolStripRenderMode.Professional;
-            this.toolStrip2.Size = new System.Drawing.Size(935, 33);
+            this.toolStrip2.Size = new System.Drawing.Size(1000, 33);
             this.toolStrip2.TabIndex = 36;
             this.toolStrip2.Text = "toolStrip2";
             // 
@@ -362,7 +362,7 @@
             // 
             // btnMode
             // 
-            this.btnMode.Location = new System.Drawing.Point(203, 423);
+            this.btnMode.Location = new System.Drawing.Point(207, 429);
             this.btnMode.Name = "btnMode";
             this.btnMode.Size = new System.Drawing.Size(119, 36);
             this.btnMode.TabIndex = 7;
@@ -451,7 +451,7 @@
             // toolStrip1
             // 
             this.toolStrip1.AutoSize = false;
-            this.toolStrip1.BackColor = System.Drawing.Color.Silver;
+            this.toolStrip1.BackColor = System.Drawing.Color.Khaki;
             this.toolStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.toolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.tsbtnFindMode,
@@ -465,14 +465,14 @@
             this.btnReset});
             this.toolStrip1.Location = new System.Drawing.Point(0, 31);
             this.toolStrip1.Name = "toolStrip1";
-            this.toolStrip1.Size = new System.Drawing.Size(935, 122);
+            this.toolStrip1.Size = new System.Drawing.Size(1000, 122);
             this.toolStrip1.TabIndex = 37;
             this.toolStrip1.Text = "toolStrip1";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(441, 166);
+            this.label2.Location = new System.Drawing.Point(445, 172);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(79, 17);
             this.label2.TabIndex = 49;
@@ -482,7 +482,7 @@
             // 
             this.txtIdBorrow.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
             this.txtIdBorrow.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.CustomSource;
-            this.txtIdBorrow.Location = new System.Drawing.Point(125, 166);
+            this.txtIdBorrow.Location = new System.Drawing.Point(129, 172);
             this.txtIdBorrow.MaxLength = 15;
             this.txtIdBorrow.Name = "txtIdBorrow";
             this.txtIdBorrow.Size = new System.Drawing.Size(267, 22);
@@ -492,7 +492,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(18, 166);
+            this.label3.Location = new System.Drawing.Point(22, 172);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(51, 17);
             this.label3.TabIndex = 51;
@@ -507,12 +507,12 @@
             this.colSerial,
             this.colNameOfBook,
             this.colAmount});
-            this.dtgvCart.Location = new System.Drawing.Point(444, 198);
+            this.dtgvCart.Location = new System.Drawing.Point(427, 204);
             this.dtgvCart.Name = "dtgvCart";
             this.dtgvCart.ReadOnly = true;
             this.dtgvCart.RowHeadersWidth = 51;
             this.dtgvCart.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dtgvCart.Size = new System.Drawing.Size(435, 261);
+            this.dtgvCart.Size = new System.Drawing.Size(544, 261);
             this.dtgvCart.TabIndex = 52;
             // 
             // colSerial
@@ -544,9 +544,9 @@
             // 
             // btnAdd
             // 
-            this.btnAdd.Location = new System.Drawing.Point(347, 315);
+            this.btnAdd.Location = new System.Drawing.Point(351, 321);
             this.btnAdd.Name = "btnAdd";
-            this.btnAdd.Size = new System.Drawing.Size(53, 25);
+            this.btnAdd.Size = new System.Drawing.Size(70, 25);
             this.btnAdd.TabIndex = 5;
             this.btnAdd.Text = "Thêm";
             this.btnAdd.UseVisualStyleBackColor = true;
@@ -556,7 +556,7 @@
             // 
             this.txtIdBook.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
             this.txtIdBook.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.CustomSource;
-            this.txtIdBook.Location = new System.Drawing.Point(125, 315);
+            this.txtIdBook.Location = new System.Drawing.Point(129, 321);
             this.txtIdBook.MaxLength = 15;
             this.txtIdBook.Name = "txtIdBook";
             this.txtIdBook.Size = new System.Drawing.Size(157, 22);
@@ -566,7 +566,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(18, 316);
+            this.label4.Location = new System.Drawing.Point(22, 322);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(61, 17);
             this.label4.TabIndex = 55;
@@ -576,7 +576,7 @@
             // 
             this.txtComment.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
             this.txtComment.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.CustomSource;
-            this.txtComment.Location = new System.Drawing.Point(125, 267);
+            this.txtComment.Location = new System.Drawing.Point(129, 273);
             this.txtComment.MaxLength = 100;
             this.txtComment.Multiline = true;
             this.txtComment.Name = "txtComment";
@@ -586,7 +586,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(18, 267);
+            this.label5.Location = new System.Drawing.Point(22, 273);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(57, 17);
             this.label5.TabIndex = 57;
@@ -594,7 +594,7 @@
             // 
             // txtAmount
             // 
-            this.txtAmount.Location = new System.Drawing.Point(288, 316);
+            this.txtAmount.Location = new System.Drawing.Point(292, 322);
             this.txtAmount.Minimum = new decimal(new int[] {
             1,
             0,
@@ -612,7 +612,7 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(21, 376);
+            this.label6.Location = new System.Drawing.Point(25, 382);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(106, 17);
             this.label6.TabIndex = 59;
@@ -620,7 +620,7 @@
             // 
             // btnCancel
             // 
-            this.btnCancel.Location = new System.Drawing.Point(533, 470);
+            this.btnCancel.Location = new System.Drawing.Point(537, 476);
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.Size = new System.Drawing.Size(133, 25);
             this.btnCancel.TabIndex = 64;
@@ -630,7 +630,7 @@
             // 
             // btnFullCancel
             // 
-            this.btnFullCancel.Location = new System.Drawing.Point(746, 470);
+            this.btnFullCancel.Location = new System.Drawing.Point(750, 476);
             this.btnFullCancel.Name = "btnFullCancel";
             this.btnFullCancel.Size = new System.Drawing.Size(133, 25);
             this.btnFullCancel.TabIndex = 65;
@@ -641,7 +641,7 @@
             // rbtnFindbyIdBorrow
             // 
             this.rbtnFindbyIdBorrow.AutoSize = true;
-            this.rbtnFindbyIdBorrow.Location = new System.Drawing.Point(125, 192);
+            this.rbtnFindbyIdBorrow.Location = new System.Drawing.Point(129, 198);
             this.rbtnFindbyIdBorrow.Name = "rbtnFindbyIdBorrow";
             this.rbtnFindbyIdBorrow.Size = new System.Drawing.Size(174, 21);
             this.rbtnFindbyIdBorrow.TabIndex = 71;
@@ -654,7 +654,7 @@
             // rbtnFindbyIdStudent
             // 
             this.rbtnFindbyIdStudent.AutoSize = true;
-            this.rbtnFindbyIdStudent.Location = new System.Drawing.Point(125, 242);
+            this.rbtnFindbyIdStudent.Location = new System.Drawing.Point(129, 248);
             this.rbtnFindbyIdStudent.Name = "rbtnFindbyIdStudent";
             this.rbtnFindbyIdStudent.Size = new System.Drawing.Size(171, 21);
             this.rbtnFindbyIdStudent.TabIndex = 70;
@@ -666,7 +666,7 @@
             // label
             // 
             this.label.AutoSize = true;
-            this.label.Location = new System.Drawing.Point(125, 342);
+            this.label.Location = new System.Drawing.Point(129, 348);
             this.label.Name = "label";
             this.label.Size = new System.Drawing.Size(55, 17);
             this.label.TabIndex = 77;
@@ -675,7 +675,7 @@
             // lblQuantum
             // 
             this.lblQuantum.AutoSize = true;
-            this.lblQuantum.Location = new System.Drawing.Point(178, 342);
+            this.lblQuantum.Location = new System.Drawing.Point(182, 348);
             this.lblQuantum.Name = "lblQuantum";
             this.lblQuantum.Size = new System.Drawing.Size(16, 17);
             this.lblQuantum.TabIndex = 78;
@@ -685,7 +685,7 @@
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(200, 342);
+            this.label8.Location = new System.Drawing.Point(204, 348);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(138, 17);
             this.label8.TabIndex = 79;
@@ -697,7 +697,7 @@
             this.cbxBorrowTime.Items.AddRange(new object[] {
             "1 tuần",
             "2 tuần"});
-            this.cbxBorrowTime.Location = new System.Drawing.Point(133, 373);
+            this.cbxBorrowTime.Location = new System.Drawing.Point(137, 379);
             this.cbxBorrowTime.Name = "cbxBorrowTime";
             this.cbxBorrowTime.Size = new System.Drawing.Size(105, 24);
             this.cbxBorrowTime.TabIndex = 89;
@@ -706,7 +706,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(935, 557);
+            this.ClientSize = new System.Drawing.Size(1000, 581);
             this.Controls.Add(this.cbxBorrowTime);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.lblQuantum);

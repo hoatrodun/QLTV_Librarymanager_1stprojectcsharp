@@ -25,6 +25,15 @@ namespace Library_Manager
         {
             lblTimeSys.Text = " | " + DateTime.Now.ToLongTimeString();
         }
+        
+        private void BookForm_Load(object sender, EventArgs e)
+        {
+            lblAccount.Text = Utility.ACCOUNT;
+            setLabel("chưa chọn");
+            setButton("", false);
+            rbtnFindbySerial.Visible = rbtnFindbyName.Visible = false;
+            setAutoComplete();
+        }
         private void setAutoComplete()
         {
             txtName.AutoCompleteMode = txtAuthor.AutoCompleteMode = txtSerial.AutoCompleteMode = AutoCompleteMode.SuggestAppend;
@@ -39,17 +48,6 @@ namespace Library_Manager
             txtSerialAutoCompleteCustomsource.AddRange(Book.getBookSerial());
             txtSerial.AutoCompleteCustomSource = txtSerialAutoCompleteCustomsource;
         }
-        private void BookForm_Load(object sender, EventArgs e)
-        {
-            lblAccount.Text = Utility.ACCOUNT;
-            setLabel("chưa chọn");
-            setButton("", false);
-            rbtnFindbySerial.Visible = rbtnFindbyName.Visible = false;
-            //set txt source
-            //name
-            setAutoComplete();
-        }
-
         private void setButton(string btn, bool status)
         {
             switch (btn)
@@ -79,10 +77,9 @@ namespace Library_Manager
 
                     timToolStripMenuItem.Enabled = xoaToolStripMenuItem.Enabled = suaToolStripMenuItem.Enabled = !status;
 
-                    //set txt need
+                    //set txt 
                     txtAmount.Enabled = txtAuthor.Enabled = txtPH.Enabled = txtTag.Enabled = txtName.Enabled = status;
                     //Set rbtn find
-                    //rbtnFindbySerial.Select();
                     rbtnFindbyName.Visible = rbtnFindbySerial.Visible = false;
                     break;
                     #endregion ADD
@@ -108,11 +105,9 @@ namespace Library_Manager
                 case "":
                     btnAddImage.Enabled = btnMode.Enabled = btnReset.Enabled = status;
                     tsbtnAddMode.Enabled = tsbtnFindMode.Enabled = !status;
-                    //must found before del or update
                     tsbtnDelMode.Enabled = tsbtnUpdateMode.Enabled = status;
                     timToolStripMenuItem.Enabled = themToolStripMenuItem.Enabled = xoaToolStripMenuItem.Enabled = suaToolStripMenuItem.Enabled = 
                     txtName.Enabled = txtAuthor.Enabled = txtSerial.Enabled = txtTag.Enabled =  txtAmount.Enabled = !status;
-                    //rbtnFindbySerial.Select();
                     rbtnFindbyName.Visible = rbtnFindbySerial.Visible = false;
                     break;
             }
@@ -368,7 +363,7 @@ namespace Library_Manager
         {
             if ((txtAuthor.TextLength + txtName.TextLength + txtPH.TextLength + txtSerial.TextLength + txtTag.TextLength) > 0)
             {
-                if (MessageBox.Show("Có vẻ như bạn chưa hoàn thành công việc... \n\n Bạn có chắc muốn thoát?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.No)
+                if (MessageBox.Show("Chưa hoàn thành công việc \n\n Bạn có chắc muốn thoát?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.No)
                     e.Cancel = true;
             }
         }

@@ -88,7 +88,6 @@ namespace Library_Manager
                 SqlCommand sqlCommand;
                 string cmd = string.Format("EXEC PROC_INSERT_BORROW_DETAIL " +
                                         "{0}, '{1}', '{2}', @time, '{3}', N'{4}'", id, serial, quantum, borrowTime, comment);
-                //Utility.DATABASECONNECTION.ExecuteNonQuery(cmd);
                 sqlCommand = new SqlCommand(cmd, Utility.DATABASECONNECTION.sqlConn);
                 sqlCommand.Parameters.Add("@time", timecreate);
                 sqlCommand.ExecuteNonQuery();

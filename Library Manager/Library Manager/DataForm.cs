@@ -14,9 +14,6 @@ namespace Library_Manager
 {
     public partial class DataForm : DevExpress.XtraEditors.XtraForm
     {
-        //string imgLogcation = "";
-
-        //DataTable table;
 
 //        pictureBox1.ImageLocation = @"C:\Users\Desktop\mypicture.jpg";
 //pictureBox1.SizeMode =PictureBoxSizeMode.StretchImage;
@@ -99,7 +96,7 @@ namespace Library_Manager
             btnCreate.Text = "Tạo tài khoản";
             lblPassword.Text = "Mật khẩu";
             lblReTypePass.Text = "Gõ lại mật khẩu";
-            lblSupperAdmin.Text = "Mật khẩu super admin";
+            lblSupperAdmin.Text = "Mật khẩu root";
             setButton(true);
             dgvAnalytics.Visible = false;
             cbxAnalytics.Visible = false;
@@ -111,7 +108,7 @@ namespace Library_Manager
             btnCreate.Text = "Sửa tài khoản";
             lblPassword.Text = "Mật khẩu mới";
             lblReTypePass.Text = "Gõ lại mật khẩu mới";
-            lblSupperAdmin.Text = "Mật khẩu super admin";
+            lblSupperAdmin.Text = "Mật khẩu root";
             setButton(true);
             dgvAnalytics.Visible = false;
             cbxAnalytics.Visible = false;
@@ -123,13 +120,13 @@ namespace Library_Manager
             {
                 if (txtPassword.Text != txtReTypePass.Text)
                 {
-                    MessageBox.Show("Mật khẩu gõ lại chưa chính xác!", "Thông báo");
+                    MessageBox.Show("Mật khẩu cũ chưa chính xác", "Thông báo");
                 }
                 else
                 {
-                    if (SysAccount.ComputeSha256Hash(txtSuperAdminPass.Text).ToUpper() != Utility.SUPER_ADMIN_PASSWORD)
+                    if (SysAccount.ComputeSha256Hash(txtSuperAdminPass.Text).ToUpper() != Utility.root)
                     {
-                        MessageBox.Show("Mật khẩu root chưa chính xác!", "Thông báo");
+                        MessageBox.Show("Mật khẩu root chưa chính xác", "Thông báo");
                     }
                     else
                     {
@@ -156,7 +153,7 @@ namespace Library_Manager
                     {
                         if (!SysAccount.CheckOldPass(txtUserName.Text, txtSuperAdminPass.Text))
                         {
-                            MessageBox.Show("Mật khẩu cũ bạn nhập chưa chính xác", "Thông báo");
+                            MessageBox.Show("Mật khẩu cũ chưa chính xác", "Thông báo");
                         }
                         else
                         {
@@ -238,9 +235,6 @@ namespace Library_Manager
         {
             setButton(false);
             dgvLog.Visible = false;
-
-            // pictureBox1.ImageLocation = @"C:\Users\Desktop\mypicture.jpg";
-            //pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
         }
 
         private void dangXuatToolStripMenuItem_Click(object sender, EventArgs e)

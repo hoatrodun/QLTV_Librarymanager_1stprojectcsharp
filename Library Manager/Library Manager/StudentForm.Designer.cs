@@ -115,7 +115,7 @@
             this.barDockControlTop.Location = new System.Drawing.Point(0, 0);
             this.barDockControlTop.Manager = this.barManager1;
             this.barDockControlTop.Margin = new System.Windows.Forms.Padding(4);
-            this.barDockControlTop.Size = new System.Drawing.Size(526, 0);
+            this.barDockControlTop.Size = new System.Drawing.Size(558, 0);
             // 
             // barDockControlBottom
             // 
@@ -124,7 +124,7 @@
             this.barDockControlBottom.Location = new System.Drawing.Point(0, 483);
             this.barDockControlBottom.Manager = this.barManager1;
             this.barDockControlBottom.Margin = new System.Windows.Forms.Padding(4);
-            this.barDockControlBottom.Size = new System.Drawing.Size(526, 0);
+            this.barDockControlBottom.Size = new System.Drawing.Size(558, 0);
             // 
             // barDockControlLeft
             // 
@@ -139,7 +139,7 @@
             // 
             this.barDockControlRight.CausesValidation = false;
             this.barDockControlRight.Dock = System.Windows.Forms.DockStyle.Right;
-            this.barDockControlRight.Location = new System.Drawing.Point(526, 0);
+            this.barDockControlRight.Location = new System.Drawing.Point(558, 0);
             this.barDockControlRight.Manager = this.barManager1;
             this.barDockControlRight.Margin = new System.Windows.Forms.Padding(4);
             this.barDockControlRight.Size = new System.Drawing.Size(0, 483);
@@ -191,7 +191,7 @@
             // 
             // menuStrip1
             // 
-            this.menuStrip1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.menuStrip1.BackColor = System.Drawing.Color.Silver;
             this.menuStrip1.GripStyle = System.Windows.Forms.ToolStripGripStyle.Visible;
             this.menuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -201,7 +201,7 @@
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Padding = new System.Windows.Forms.Padding(2, 1, 0, 1);
-            this.menuStrip1.Size = new System.Drawing.Size(526, 29);
+            this.menuStrip1.Size = new System.Drawing.Size(558, 29);
             this.menuStrip1.TabIndex = 9;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -289,10 +289,10 @@
             this.ptbImg.ErrorImage = ((System.Drawing.Image)(resources.GetObject("ptbImg.ErrorImage")));
             this.ptbImg.Image = ((System.Drawing.Image)(resources.GetObject("ptbImg.Image")));
             this.ptbImg.InitialImage = ((System.Drawing.Image)(resources.GetObject("ptbImg.InitialImage")));
-            this.ptbImg.Location = new System.Drawing.Point(54, 312);
+            this.ptbImg.Location = new System.Drawing.Point(12, 312);
             this.ptbImg.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.ptbImg.Name = "ptbImg";
-            this.ptbImg.Size = new System.Drawing.Size(61, 47);
+            this.ptbImg.Size = new System.Drawing.Size(103, 77);
             this.ptbImg.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.ptbImg.TabIndex = 10;
             this.ptbImg.TabStop = false;
@@ -413,7 +413,7 @@
             this.toolStrip2.Location = new System.Drawing.Point(0, 458);
             this.toolStrip2.Name = "toolStrip2";
             this.toolStrip2.RenderMode = System.Windows.Forms.ToolStripRenderMode.Professional;
-            this.toolStrip2.Size = new System.Drawing.Size(526, 25);
+            this.toolStrip2.Size = new System.Drawing.Size(558, 25);
             this.toolStrip2.TabIndex = 36;
             this.toolStrip2.Text = "toolStrip2";
             // 
@@ -550,7 +550,7 @@
             // toolStrip1
             // 
             this.toolStrip1.AutoSize = false;
-            this.toolStrip1.BackColor = System.Drawing.Color.Silver;
+            this.toolStrip1.BackColor = System.Drawing.Color.Khaki;
             this.toolStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.toolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.tsbtnFindMode,
@@ -566,7 +566,7 @@
             this.btnReset});
             this.toolStrip1.Location = new System.Drawing.Point(0, 29);
             this.toolStrip1.Name = "toolStrip1";
-            this.toolStrip1.Size = new System.Drawing.Size(526, 87);
+            this.toolStrip1.Size = new System.Drawing.Size(558, 87);
             this.toolStrip1.TabIndex = 37;
             this.toolStrip1.Text = "toolStrip1";
             // 
@@ -601,7 +601,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(526, 483);
+            this.ClientSize = new System.Drawing.Size(558, 483);
             this.Controls.Add(this.rbtnFindbyName);
             this.Controls.Add(this.rbtnFindbyId);
             this.Controls.Add(this.btnMode);

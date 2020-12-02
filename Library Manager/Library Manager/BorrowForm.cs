@@ -29,22 +29,21 @@ namespace Library_Manager
 
         private void setAutoComplete()
         {
-            //Id Student
+            //id student
             txtIdBorrow.AutoCompleteMode = txtIdBook.AutoCompleteMode = txtIdStudent.AutoCompleteMode = AutoCompleteMode.SuggestAppend;
             txtIdStudent.AutoCompleteSource = AutoCompleteSource.CustomSource;
             var txtIdStudentAutoCompleteCustomsource = new AutoCompleteStringCollection();
             txtIdStudentAutoCompleteCustomsource.AddRange(Student.getStudentId());
             txtIdStudent.AutoCompleteCustomSource = txtIdStudentAutoCompleteCustomsource;
 
-            //Id borrow
+            //id borrow
             //txt.AutoCompleteMode = txtEmail.AutoCompleteMode = txtIdStudent.AutoCompleteMode = AutoCompleteMode.SuggestAppend;
-
             txtIdBorrow.AutoCompleteSource = AutoCompleteSource.CustomSource;
             var txtIdBorrowAutoCompleteCustomsource = new AutoCompleteStringCollection();
             txtIdBorrowAutoCompleteCustomsource.AddRange(Borrow.getBorrowId());
             txtIdBorrow.AutoCompleteCustomSource = txtIdBorrowAutoCompleteCustomsource;
 
-            //id Book
+            //id book
             txtIdBook.AutoCompleteSource = AutoCompleteSource.CustomSource;
             var txtIdBookAutoCompleteCustomsource = new AutoCompleteStringCollection();
             txtIdBookAutoCompleteCustomsource.AddRange(Book.getBookSerial());
@@ -93,12 +92,8 @@ namespace Library_Manager
                     timToolStripMenuItem.Enabled = xoaToolStripMenuItem.Enabled = !status;
                     btnAdd.Enabled = btnCancel.Enabled = btnFullCancel.Enabled = status;
 
-                    //set txt need
-                    //
                     txtIdBorrow.Enabled = false;
                     txtIdStudent.Enabled = txtIdBook.Enabled = txtAmount.Enabled = txtComment.Enabled = status;
-                    //Set rbtn find
-                    //rbtnFindbyId.Select();
                     rbtnFindbyIdBorrow.Visible = rbtnFindbyIdStudent.Visible = false;
                     break;
                 #endregion ADD
@@ -113,7 +108,6 @@ namespace Library_Manager
                 case "":
                     btnMode.Enabled = btnReset.Enabled = status;
                     tsbtnAddMode.Enabled = tsbtnFindMode.Enabled = !status;
-                    //must found before del or update
                     tsbtnDelMode.Enabled = status;
                     timToolStripMenuItem.Enabled = themToolStripMenuItem.Enabled = xoaToolStripMenuItem.Enabled = !status;
                     txtIdBook.Enabled = txtIdStudent.Enabled = txtAmount.Enabled = txtComment.Enabled = !status;
@@ -192,7 +186,6 @@ namespace Library_Manager
                                 dtgvCart.Rows.Add(row[1], Book.getBookNameBySerial(row[1].ToString()), row[2].ToString());
                  
                             }
-                            //txtIdStudent.Text = table.Rows[0][0].ToString();
                             xoaToolStripMenuItem.Enabled = tsbtnDelMode.Enabled = true;
                         }
                         catch (Exception ex)
@@ -212,8 +205,7 @@ namespace Library_Manager
                             foreach (DataRow row in table.Rows)
                             {
                                 dtgvCart.Rows.Add(row[1].ToString(), Book.getBookNameBySerial(row[1].ToString()), row[2].ToString());
-                            }
-                            //edit here             
+                            }     
                             xoaToolStripMenuItem.Enabled = tsbtnDelMode.Enabled = true;
                         }
                         catch (Exception ex)
@@ -234,7 +226,7 @@ namespace Library_Manager
                         }
                         else
                         {
-                            if (Borrow.numOfBorrowCard(txtIdStudent.Text) < 5)
+                            if (Borrow.numOfBorrowCard(txtIdStudent.Text) < 3)
                             {
                                 if (Borrow.insertBorrow(txtIdStudent.Text) > 0)
                                     try
@@ -260,7 +252,7 @@ namespace Library_Manager
                             }
                             else
                             {
-                                MessageBox.Show("Bạn đã đạt giới hạn 5 phiếu mượn sách", "Thông báo");
+                                MessageBox.Show("Bạn đã đạt giới hạn 3 phiếu mượn sách", "Thông báo");
                             }
                         }
                         setAutoComplete();
@@ -372,7 +364,6 @@ namespace Library_Manager
                     return;
                 }
                 dtgvCart.Rows.Add(txtIdBook.Text, Book.getBookNameBySerial(txtIdBook.Text), txtAmount.Value);
-                //cart.Add(txtIdBook.Text);
             }
         }
 

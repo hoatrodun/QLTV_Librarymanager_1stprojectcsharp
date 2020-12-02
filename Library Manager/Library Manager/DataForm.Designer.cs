@@ -63,15 +63,12 @@
             this.toolStripSeparator5 = new System.Windows.Forms.ToolStripSeparator();
             this.btnAddAccount = new System.Windows.Forms.ToolStripButton();
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
-            this.btnViewLog = new System.Windows.Forms.ToolStripButton();
-            this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
-            this.btnViewAnalytics = new System.Windows.Forms.ToolStripButton();
             this.toolStripSeparator3 = new System.Windows.Forms.ToolStripSeparator();
             this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
             this.btnFixAccount = new System.Windows.Forms.ToolStripButton();
-            this.toolStripSeparator4 = new System.Windows.Forms.ToolStripSeparator();
             this.btnReset = new System.Windows.Forms.ToolStripButton();
-            this.toolStripSeparator6 = new System.Windows.Forms.ToolStripSeparator();
+            this.btnViewAnalytics = new System.Windows.Forms.ToolStripButton();
+            this.btnViewLog = new System.Windows.Forms.ToolStripButton();
             this.btnCreate = new System.Windows.Forms.Button();
             this.lblPassword = new System.Windows.Forms.Label();
             this.lblUserName = new System.Windows.Forms.Label();
@@ -118,16 +115,16 @@
             this.barDockControlTop.Location = new System.Drawing.Point(0, 0);
             this.barDockControlTop.Manager = this.barManager1;
             this.barDockControlTop.Margin = new System.Windows.Forms.Padding(4);
-            this.barDockControlTop.Size = new System.Drawing.Size(910, 0);
+            this.barDockControlTop.Size = new System.Drawing.Size(1156, 0);
             // 
             // barDockControlBottom
             // 
             this.barDockControlBottom.CausesValidation = false;
             this.barDockControlBottom.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.barDockControlBottom.Location = new System.Drawing.Point(0, 608);
+            this.barDockControlBottom.Location = new System.Drawing.Point(0, 671);
             this.barDockControlBottom.Manager = this.barManager1;
             this.barDockControlBottom.Margin = new System.Windows.Forms.Padding(4);
-            this.barDockControlBottom.Size = new System.Drawing.Size(910, 0);
+            this.barDockControlBottom.Size = new System.Drawing.Size(1156, 0);
             // 
             // barDockControlLeft
             // 
@@ -136,16 +133,16 @@
             this.barDockControlLeft.Location = new System.Drawing.Point(0, 0);
             this.barDockControlLeft.Manager = this.barManager1;
             this.barDockControlLeft.Margin = new System.Windows.Forms.Padding(4);
-            this.barDockControlLeft.Size = new System.Drawing.Size(0, 608);
+            this.barDockControlLeft.Size = new System.Drawing.Size(0, 671);
             // 
             // barDockControlRight
             // 
             this.barDockControlRight.CausesValidation = false;
             this.barDockControlRight.Dock = System.Windows.Forms.DockStyle.Right;
-            this.barDockControlRight.Location = new System.Drawing.Point(910, 0);
+            this.barDockControlRight.Location = new System.Drawing.Point(1156, 0);
             this.barDockControlRight.Manager = this.barManager1;
             this.barDockControlRight.Margin = new System.Windows.Forms.Padding(4);
-            this.barDockControlRight.Size = new System.Drawing.Size(0, 608);
+            this.barDockControlRight.Size = new System.Drawing.Size(0, 671);
             // 
             // barLargeButtonItem1
             // 
@@ -204,7 +201,7 @@
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Padding = new System.Windows.Forms.Padding(2, 1, 0, 1);
-            this.menuStrip1.Size = new System.Drawing.Size(910, 29);
+            this.menuStrip1.Size = new System.Drawing.Size(1156, 29);
             this.menuStrip1.TabIndex = 9;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -220,14 +217,14 @@
             // dangXuatToolStripMenuItem
             // 
             this.dangXuatToolStripMenuItem.Name = "dangXuatToolStripMenuItem";
-            this.dangXuatToolStripMenuItem.Size = new System.Drawing.Size(173, 28);
+            this.dangXuatToolStripMenuItem.Size = new System.Drawing.Size(224, 28);
             this.dangXuatToolStripMenuItem.Text = "Đăng xuất";
             this.dangXuatToolStripMenuItem.Click += new System.EventHandler(this.dangXuatToolStripMenuItem_Click);
             // 
             // thoatToolStripMenuItem
             // 
             this.thoatToolStripMenuItem.Name = "thoatToolStripMenuItem";
-            this.thoatToolStripMenuItem.Size = new System.Drawing.Size(173, 28);
+            this.thoatToolStripMenuItem.Size = new System.Drawing.Size(224, 28);
             this.thoatToolStripMenuItem.Text = "Thoát";
             this.thoatToolStripMenuItem.Click += new System.EventHandler(this.thoatToolStripMenuItem_Click);
             // 
@@ -246,14 +243,14 @@
             // 
             this.viewLogToolStripMenuItem.Name = "viewLogToolStripMenuItem";
             this.viewLogToolStripMenuItem.Size = new System.Drawing.Size(278, 28);
-            this.viewLogToolStripMenuItem.Text = "Xem file Log";
+            this.viewLogToolStripMenuItem.Text = "Hoạt động user";
             this.viewLogToolStripMenuItem.Click += new System.EventHandler(this.viewLogToolStripMenuItem_Click);
             // 
             // viewAnalyticsToolStripMenuItem
             // 
             this.viewAnalyticsToolStripMenuItem.Name = "viewAnalyticsToolStripMenuItem";
             this.viewAnalyticsToolStripMenuItem.Size = new System.Drawing.Size(278, 28);
-            this.viewAnalyticsToolStripMenuItem.Text = "Xem thống kê";
+            this.viewAnalyticsToolStripMenuItem.Text = "Thống kê";
             this.viewAnalyticsToolStripMenuItem.Click += new System.EventHandler(this.viewAnalyticsToolStripMenuItem_Click);
             // 
             // addAccountToolStripMenuItem
@@ -281,7 +278,7 @@
             // thongTinToolStripMenuItem
             // 
             this.thongTinToolStripMenuItem.Name = "thongTinToolStripMenuItem";
-            this.thongTinToolStripMenuItem.Size = new System.Drawing.Size(168, 28);
+            this.thongTinToolStripMenuItem.Size = new System.Drawing.Size(224, 28);
             this.thongTinToolStripMenuItem.Text = "Thông tin";
             this.thongTinToolStripMenuItem.Click += new System.EventHandler(this.thongTinToolStripMenuItem_Click);
             // 
@@ -302,10 +299,10 @@
             this.lblMode,
             this.lblAccount,
             this.lblTimeSys});
-            this.toolStrip2.Location = new System.Drawing.Point(0, 583);
+            this.toolStrip2.Location = new System.Drawing.Point(0, 646);
             this.toolStrip2.Name = "toolStrip2";
             this.toolStrip2.RenderMode = System.Windows.Forms.ToolStripRenderMode.Professional;
-            this.toolStrip2.Size = new System.Drawing.Size(910, 25);
+            this.toolStrip2.Size = new System.Drawing.Size(1156, 25);
             this.toolStrip2.TabIndex = 36;
             this.toolStrip2.Text = "toolStrip2";
             // 
@@ -367,55 +364,23 @@
             // toolStrip1
             // 
             this.toolStrip1.AutoSize = false;
-            this.toolStrip1.BackColor = System.Drawing.Color.LavenderBlush;
+            this.toolStrip1.BackColor = System.Drawing.Color.Khaki;
             this.toolStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.toolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.btnViewLog,
-            this.toolStripSeparator1,
-            this.btnViewAnalytics,
             this.toolStripSeparator3,
             this.btnAddAccount,
             this.toolStripSeparator2,
             this.btnFixAccount,
-            this.toolStripSeparator4,
             this.btnReset,
+            this.btnViewAnalytics,
+            this.btnViewLog,
             this.tsbtnExit,
-            this.toolStripSeparator5,
-            this.toolStripSeparator6});
+            this.toolStripSeparator5});
             this.toolStrip1.Location = new System.Drawing.Point(0, 29);
             this.toolStrip1.Name = "toolStrip1";
-            this.toolStrip1.Size = new System.Drawing.Size(910, 124);
+            this.toolStrip1.Size = new System.Drawing.Size(1156, 124);
             this.toolStrip1.TabIndex = 37;
             this.toolStrip1.Text = "toolStrip1";
-            // 
-            // btnViewLog
-            // 
-            this.btnViewLog.Image = ((System.Drawing.Image)(resources.GetObject("btnViewLog.Image")));
-            this.btnViewLog.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-            this.btnViewLog.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.btnViewLog.Name = "btnViewLog";
-            this.btnViewLog.Size = new System.Drawing.Size(108, 121);
-            this.btnViewLog.Text = "Xem file Log";
-            this.btnViewLog.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.btnViewLog.ToolTipText = "Xem file log";
-            this.btnViewLog.Click += new System.EventHandler(this.btnViewLog_Click);
-            // 
-            // toolStripSeparator1
-            // 
-            this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(6, 124);
-            // 
-            // btnViewAnalytics
-            // 
-            this.btnViewAnalytics.Image = ((System.Drawing.Image)(resources.GetObject("btnViewAnalytics.Image")));
-            this.btnViewAnalytics.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-            this.btnViewAnalytics.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.btnViewAnalytics.Name = "btnViewAnalytics";
-            this.btnViewAnalytics.Size = new System.Drawing.Size(121, 121);
-            this.btnViewAnalytics.Text = "Xem thống kê";
-            this.btnViewAnalytics.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.btnViewAnalytics.ToolTipText = "Xem thống kê";
-            this.btnViewAnalytics.Click += new System.EventHandler(this.btnViewAnalytics_Click);
             // 
             // toolStripSeparator3
             // 
@@ -440,27 +405,41 @@
             this.btnFixAccount.ToolTipText = "Sửa tài khoản quản trị";
             this.btnFixAccount.Click += new System.EventHandler(this.btnFixAccount_Click);
             // 
-            // toolStripSeparator4
-            // 
-            this.toolStripSeparator4.Name = "toolStripSeparator4";
-            this.toolStripSeparator4.Size = new System.Drawing.Size(6, 124);
-            // 
             // btnReset
             // 
             this.btnReset.Image = ((System.Drawing.Image)(resources.GetObject("btnReset.Image")));
             this.btnReset.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.btnReset.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.btnReset.Name = "btnReset";
-            this.btnReset.Size = new System.Drawing.Size(63, 121);
+            this.btnReset.Size = new System.Drawing.Size(68, 121);
             this.btnReset.Text = "Đặt lại";
             this.btnReset.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.btnReset.ToolTipText = "Đặt lại";
             this.btnReset.Click += new System.EventHandler(this.btnReset_Click);
             // 
-            // toolStripSeparator6
+            // btnViewAnalytics
             // 
-            this.toolStripSeparator6.Name = "toolStripSeparator6";
-            this.toolStripSeparator6.Size = new System.Drawing.Size(6, 124);
+            this.btnViewAnalytics.Image = ((System.Drawing.Image)(resources.GetObject("btnViewAnalytics.Image")));
+            this.btnViewAnalytics.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.btnViewAnalytics.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.btnViewAnalytics.Name = "btnViewAnalytics";
+            this.btnViewAnalytics.Size = new System.Drawing.Size(100, 121);
+            this.btnViewAnalytics.Text = "Thống kê";
+            this.btnViewAnalytics.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.btnViewAnalytics.ToolTipText = "Xem thống kê";
+            this.btnViewAnalytics.Click += new System.EventHandler(this.btnViewAnalytics_Click);
+            // 
+            // btnViewLog
+            // 
+            this.btnViewLog.Image = ((System.Drawing.Image)(resources.GetObject("btnViewLog.Image")));
+            this.btnViewLog.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.btnViewLog.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.btnViewLog.Name = "btnViewLog";
+            this.btnViewLog.Size = new System.Drawing.Size(133, 121);
+            this.btnViewLog.Text = "Hoạt động user";
+            this.btnViewLog.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
+            this.btnViewLog.ToolTipText = "Xem file log";
+            this.btnViewLog.Click += new System.EventHandler(this.btnViewLog_Click);
             // 
             // btnCreate
             // 
@@ -576,7 +555,7 @@
             this.dgvAnalytics.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvAnalytics.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.DisplayedCells;
             this.dgvAnalytics.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvAnalytics.Location = new System.Drawing.Point(0, 177);
+            this.dgvAnalytics.Location = new System.Drawing.Point(0, 183);
             this.dgvAnalytics.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dgvAnalytics.Name = "dgvAnalytics";
             this.dgvAnalytics.ReadOnly = true;
@@ -584,7 +563,7 @@
             dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.dgvAnalytics.RowsDefaultCellStyle = dataGridViewCellStyle1;
             this.dgvAnalytics.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvAnalytics.Size = new System.Drawing.Size(1124, 404);
+            this.dgvAnalytics.Size = new System.Drawing.Size(1140, 438);
             this.dgvAnalytics.TabIndex = 65;
             // 
             // colTime
@@ -619,14 +598,17 @@
             this.dgvLog.Name = "dgvLog";
             this.dgvLog.ReadOnly = true;
             this.dgvLog.RowHeadersWidth = 51;
-            this.dgvLog.Size = new System.Drawing.Size(1124, 454);
+            this.dgvLog.Size = new System.Drawing.Size(1140, 438);
             this.dgvLog.TabIndex = 42;
             // 
             // DataForm
             // 
+            this.ActiveGlowColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.Appearance.Options.UseBackColor = true;
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(910, 608);
+            this.ClientSize = new System.Drawing.Size(1156, 671);
             this.Controls.Add(this.dgvAnalytics);
             this.Controls.Add(this.cbxAnalytics);
             this.Controls.Add(this.lblSupperAdmin);
@@ -706,10 +688,8 @@
         private System.Windows.Forms.ToolStripButton btnViewLog;
         private System.Windows.Forms.ToolStripButton btnViewAnalytics;
         private System.Windows.Forms.ToolStripButton btnReset;
-        private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator3;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator2;
-        private System.Windows.Forms.ToolStripSeparator toolStripSeparator4;
         private System.Windows.Forms.Label lblReTypePass;
         private System.Windows.Forms.TextBox txtReTypePass;
         private System.Windows.Forms.Button btnCreate;
@@ -720,7 +700,6 @@
         private System.Windows.Forms.Label lblSupperAdmin;
         private System.Windows.Forms.TextBox txtSuperAdminPass;
         private System.Windows.Forms.ComboBox cbxAnalytics;
-        private System.Windows.Forms.ToolStripSeparator toolStripSeparator6;
         private System.Windows.Forms.DataGridView dgvAnalytics;
         private System.Windows.Forms.DataGridView dgvLog;
         private System.Windows.Forms.DataGridViewTextBoxColumn colEvent;

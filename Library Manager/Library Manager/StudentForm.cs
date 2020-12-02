@@ -48,8 +48,6 @@ namespace Library_Manager
             setLabel("chưa chọn");
             setButton("", false);
             rbtnFindbyId.Visible = rbtnFindbyName.Visible = false;
-            //set txt source
-            //name
             setAutoComplete();
         }
 
@@ -109,7 +107,7 @@ namespace Library_Manager
                 case "":
                     btnAddImage.Enabled = btnMode.Enabled = btnReset.Enabled = status;
                     tsbtnAddMode.Enabled = tsbtnFindMode.Enabled = !status;
-                    //must found before del or update
+                    //tim truoc khi xoa/update
                     tsbtnDelMode.Enabled = tsbtnUpdateMode.Enabled = status;
                     timToolStripMenuItem.Enabled = themToolStripMenuItem.Enabled = xoaToolStripMenuItem.Enabled = suaToolStripMenuItem.Enabled = 
                     txtName.Enabled = txtEmail.Enabled = txtId.Enabled = txtPhone.Enabled = !status;

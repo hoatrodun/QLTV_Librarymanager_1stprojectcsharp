@@ -14,7 +14,7 @@ namespace Library_Manager
     {
         public static DatabaseConnection DATABASECONNECTION;
         public static string ACCOUNT;
-        public const string SUPER_ADMIN_PASSWORD = "05B3B66D444B8ED761948161AA8E4B986D2DF0588FACC556B4C97DC60D44C286";
+        public const string root = "05B3B66D444B8ED761948161AA8E4B986D2DF0588FACC556B4C97DC60D44C286";
         public static byte[] ImageToByteArray(Image inImg)
         {
             ImageConverter imgCon = new ImageConverter();

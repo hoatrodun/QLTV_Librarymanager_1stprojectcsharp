@@ -32,7 +32,6 @@ namespace Library_Manager
             }
             return true;
         }
-        //Phuong thuc de thuc hien cau lenh strSQL truy vân du lieu
         public DataTable Execute(string sqlStr)
         {
             da = new SqlDataAdapter(sqlStr, sqlConn);
@@ -40,14 +39,11 @@ namespace Library_Manager
             da.Fill(dt);
             return dt;
         }
-        ////Phuong thuc de thuc hien cac lenh Them, Xoa, Sua
+        //Phuong thuc thuc hien lenh them xoa sua
         public void ExecuteNonQuery(string strSQL)
         {
             SqlCommand sqlcmd = new SqlCommand(strSQL, sqlConn);
-            //if (sqlConn.State == ConnectionState.Closed)
-            //    sqlConn.Open(); //Mo ket noi
-            sqlcmd.ExecuteNonQuery();//Lenh hien lenh Them/Xoa/Sua
-            //sqlConn.Close();//Dong ket noi
+            sqlcmd.ExecuteNonQuery();
         }
     }
 }
