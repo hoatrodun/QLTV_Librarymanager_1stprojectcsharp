@@ -1,2 +1,2 @@
-A Library Management System that I made using C#, .NET and Windows Forms 
+A Library Management System uses C#, SQL and Windows Forms 
  
